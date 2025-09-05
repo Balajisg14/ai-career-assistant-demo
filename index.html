@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AI Career & Learning Assistant</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>AI-Powered Career & Learning Assistant</h1>
+  </header>
+
+  <nav>
+    <button onclick="showScreen('dashboard')">Dashboard</button>
+    <button onclick="showScreen('learning')">Learning Path</button>
+    <button onclick="showScreen('interview')">Mock Interviews</button>
+    <button onclick="showScreen('collab')">Collaboration Hub</button>
+  </nav>
+
+  <main>
+    <!-- Dashboard -->
+    <section id="dashboard" class="screen active">
+      <h2>Welcome!</h2>
+      <div class="card">
+        <p>👋 Hi Student! I’m your AI Mentor. Ask me anything about coding, aptitude, or placements.</p>
+      </div>
+    </section>
+
+    <!-- Learning Path -->
+    <section id="learning" class="screen">
+      <h2>Personalized Learning Path</h2>
+      <div class="card">
+        <p>📘 Recommended Course: Data Structures & Algorithms</p>
+        <p>Progress: ████▒▒▒▒ 50%</p>
+      </div>
+      <div class="card">
+        <p>📘 Recommended Course: Aptitude & Reasoning</p>
+        <p>Progress: ██▒▒▒▒▒▒ 20%</p>
+      </div>
+    </section>
+
+    <!-- Mock Interviews -->
+    <section id="interview" class="screen">
+      <h2>Mock Interview</h2>
+      <div class="card">
+        <p>💬 Question: What is the difference between an array and a linked list?</p>
+        <textarea placeholder="Type your answer here..."></textarea>
+      </div>
+      <div class="card">
+        <p>💬 Question: Explain OOP principles.</p>
+        <textarea placeholder="Type your answer here..."></textarea>
+      </div>
+    </section>
+
+    <!-- Collaboration Hub -->
+    <section id="collab" class="screen">
+      <h2>Collaboration Hub</h2>
+      <div class="card">
+        <p>👥 Group Chat Room</p>
+        <p><b>Alice:</b> Let’s discuss DBMS problems.</p>
+        <p><b>Bob:</b> Sure! I’ll share my notes.</p>
+        <textarea placeholder="Write your message..."></textarea>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
